@@ -1,0 +1,170 @@
+html,body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Dosis' ,sans-serif;
+    font-weight: 300;
+}
+.bg-purple{
+    background: url("https://media.istockphoto.com/id/1282393640/es/foto/fondo-abstracto-azul-oscuro-universo-espacial-cosmos-negro-oscuro-con-el-concepto-de-giro.jpg?s=170667a&w=0&k=20&c=xLoVsJatZYpbylVlHajiahto67n_Nz6icTaFhbOd4y4=");
+    background-size: cover;
+    height: 100%;
+    overflow: hidden; 
+}
+.custom-navbar{
+    padding-top: 15px;
+}
+.brand-logo{
+    margin-left: 25px;
+    margin-top: 5px;
+    display: inline-block;
+}
+.brand-logo img {
+    width:80px;
+}
+.navbar-links{
+    display: inline-block;
+    float:right;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li{
+    float: left;
+    padding: 0px 15px;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+li a:hover{
+    color: #ffcb39;
+}
+img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+.central-body{
+    display: flex;
+}
+.mars{
+    margin-left: 3%;
+    display:flex;
+}
+.mars img{
+    height: 90px;
+}
+.i404{
+    margin-left: 23%;
+}
+.i404 img{
+    width:300px;
+}
+.saturn{
+    width:140px;
+    margin-left: 25%;
+}
+.saturn img{
+    width:140px;
+}
+
+.image img{
+    display:inline-block;
+    width:40px;
+    margin-left: 20%; 
+    animation-name: translation;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;  
+}
+@keyframes translation {
+    0%{
+        transform:translate(0px,0px);
+    }
+    15%{
+        transform: translate(169px,-236px) rotate(33deg); 
+    }
+    25%{
+        transform: translate(557px,-236px) rotate(66deg); 
+    } 
+    40%{
+        transform: translate(771px,-187px) rotate(101deg);
+    }
+    55%{
+        transform: translate(771px,236px) rotate(213deg);
+    }
+    70%{
+        transform: translate(194px,236px) rotate(252deg);
+    }
+    100%{
+        transform: translate(0px,0px) rotate(360deg) ; 
+    }
+ }  
+.objects{
+    display: flex;
+    justify-content: center;
+}
+.earth-moon{
+    display: flex;
+    margin-left: 5%;
+    animation-name: rotation;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.jupiter{
+    margin-left: 65%;
+}
+.jupiter img{
+    width:180px;
+}
+.bax_astronaut{
+    display: flex;
+    justify-content: center;
+    animation-name: moving;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;  
+}
+.bax_astronaut img{
+    width:160px;
+}
+@keyframes moving {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: translate(23px,-100px) rotate(33deg);
+    }
+    50%{
+        transform: translate(123px,-200px) rotate(125deg);
+    }
+    75%{
+        transform: translate(300px,-260px) rotate(-75deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+

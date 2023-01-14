@@ -1,0 +1,86 @@
+@media  screen and (max-width:1000px) and (max-height:500px) {
+    .brand-logo img {
+        width: 60px;
+    }
+    .mars img {
+        height: 60px;
+    }
+    .i404{
+        margin-left: 20%;
+    }
+    .i404 img {
+        width: 200px;
+    }
+
+    .saturn img {
+        width: 80px;
+    }
+
+    .image img {
+        width: 30px;
+        animation-name: translation;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;  
+    }
+    .earth-moon{
+        margin-top:-10%;
+    }
+    .jupiter img {
+        width: 120px;
+    }
+
+    .bax_astronaut img {
+        width: 80px;
+    }
+    @keyframes translation {
+        0%{
+            transform:translate(5px,5px);
+        }
+        15%{
+            transform: translate(120px,-155px) rotate(33deg); 
+        }
+        25%{
+            transform: translate(450px,-148px) rotate(100deg); 
+        } 
+        40%{
+            transform: translate(500px,140px) rotate(220deg);
+        }
+        55%{
+            transform: translate(100px,100px) rotate(213deg);
+        }
+        70%{
+            transform: translate(30px,50px) rotate(252deg);
+        }
+        100%{
+            transform: translate(5px,5px) rotate(360deg) ; 
+        }
+     } 
+     .bax_astronaut{
+        animation-name: moving;
+        animation-duration: 50s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;  
+    }
+    @keyframes moving {
+        0%{
+            transform: translate(30px, -100px) rotate(0deg);
+        }
+        25%{
+            transform: translate(220px,-150px) rotate(33deg);
+        }
+        50%{
+            transform: translate(123px,-170px) rotate(125deg);
+        }
+        75%{
+            transform: translate(180px,-100px) rotate(-75deg);
+        } 
+        100%{
+            transform: translate(30px, -100px) rotate(0deg);
+        }
+         
+    }  
+
+}
